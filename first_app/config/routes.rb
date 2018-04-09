@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # get '/' => 'home#index'
   root 'home#index'
+  
+  get 'utilities/stock' => 'utilities#stock'
+  get 'utilities/weather'
+  get 'utilities/lotto'
+  get 'utilities' => 'utilities#index'
   
   get '/animals' => 'animals#index'
   get '/animals/cat' => 'animals#cat'
