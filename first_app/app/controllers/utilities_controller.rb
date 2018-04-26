@@ -59,6 +59,7 @@ class UtilitiesController < ApplicationController
 
   def show_stock
     #get_stock 에서 입력한 data로 주식 정보 찾아서 보여주기
+    #example params['input_symbol']
     symbol = params[:input_symbol]
     @stock = StockQuote::Stock.quote(symbol)
     # if @stock.nil?

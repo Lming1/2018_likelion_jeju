@@ -1,0 +1,6 @@
+<h1>주식의 정보입니다.</h1>
+<% if @stock.nil? %>
+  <p>그런거 없어</p>
+<% else %>
+<p><%= @stock.company_name %> : $<%= @stock.latest_price %> </p>
+<% end %>
