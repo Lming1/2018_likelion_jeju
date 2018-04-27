@@ -5,7 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-#stock info 
+
+gem 'faker'
+gem 'pry-rails'
+# database
+gem 'rails_db'
+#stock info
 gem 'stock_quote'
 gem 'geocoder'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

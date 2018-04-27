@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @laptop.company %>
+</p>
+
+<p>
+  <strong>Inch:</strong>
+  <%= @laptop.inch %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @laptop.year %>
+</p>
+
+<%= link_to 'Edit', edit_laptop_path(@laptop) %> |
+<%= link_to 'Back', laptops_path %>

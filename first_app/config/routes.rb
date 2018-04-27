@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :laptops
   # get '/' => 'home#index'
-  root 'home#index'
+  root 'utilities#index'
 
   get 'utilities/get_stock' => 'utilities#get_stock'
   get 'utilities/show_stock' => 'utilities#show_stock'

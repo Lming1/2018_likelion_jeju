@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  inch: 1.5
+  year: 1
+
+two:
+  company: MyString
+  inch: 1.5
+  year: 1
