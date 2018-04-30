@@ -23,4 +23,9 @@ class PostController < ApplicationController
   def show
     @board = Board.find(params[:id])
   end
+
+  def destroy
+    @board = Board.destroy(params[:id])
+    redirect_to '/'
+  end
 end
