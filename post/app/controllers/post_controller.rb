@@ -2,7 +2,7 @@ class PostController < ApplicationController
 
   skip_before_action :verify_authenticity_token
   def index
-    @boards = Board.all
+    @boards = Board.all.reverse
   end
 
   def new
