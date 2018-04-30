@@ -3,7 +3,6 @@ class PostController < ApplicationController
   skip_before_action :verify_authenticity_token
   def index
     @boards = Board.all
-    puts @boards
   end
 
   def new
@@ -19,5 +18,9 @@ class PostController < ApplicationController
     @board.content = @content
     @board.save
     redirect_to '/'
+  end
+
+  def show
+    @board = Board.find(params[:id])
   end
 end
